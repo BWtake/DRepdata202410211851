@@ -1,0 +1,96 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "BWtake(長崎)Japan"
+    },
+    "motivations": {
+      "@value": ""
+    },
+    "objectives": {
+      "@value": "私は長崎で内科医として勤務しているものです。\n息子が2021年4月にSPO (Ticker: NGS)を立ち上げたことをきっかけに、カルダノの世界に入りました。\nカルダノについて学ぶうちに、「カルダノエコシステムに何か貢献できないか」と考えるようになりました。\nCatalyst Votingから始め、Test Netなどに参加し、現在はDRepにも挑戦しています。\n専門外ではありますが、カルダノがより良い未来に向かって進めるよう、尽力していきたいと思っています。\n\n**********************************\nI am a practicing internal medicine physician in Nagasaki.\nI entered the Cardano space when my son launched an SPO (Ticker: NGS) in April 2021.\nAs I learned more about Cardano, I started wondering if I could contribute in some way to the Cardano ecosystem.\nI began with Catalyst Voting and participated in Test Nets, and now I am taking on the challenge of being a DRep.\nAlthough I am not a specialist in this field, I will do my best to help Cardano move toward a better future."
+    },
+    "paymentAddress": {
+      "@value": "addr1qy342etnn7696yu9n92nk54ug055ef2p32vysg8akrdp2n3amy5fnamj63sk5xnle0cufvtpm6u00mkvwltthm8wv2kqeyj3tu"
+    },
+    "qualifications": {
+      "@value": ""
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "学位論文(Thesis)"
+        },
+        "uri": {
+          "@value": "https://www.sciencedirect.com/science/article/abs/pii/S0165460898001411"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "著作 (Publications)"
+        },
+        "uri": {
+          "@value": "https://www.amazon.co.jp/dp/B0BFV292N1"
+        }
+      }
+    ]
+  }
+}
